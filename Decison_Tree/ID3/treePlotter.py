@@ -58,11 +58,25 @@ def plotNode(nodeTxt, centerPt, parentPt, nodeType):
 
 
 def plotMidText(cntrPt, parentPt, txtString):
+    """
+    绘制文本
+    :param cntrPt: 中心点坐标
+    :param parentPt: 父结点坐标
+    :param txtString: 文本内容
+    :return: 无返回
+    """
     xMid = (parentPt[0] - cntrPt[0]) / 2.0 + cntrPt[0]
     yMid = (parentPt[1] - cntrPt[1]) / 2.0 + cntrPt[1]
     plt.text(xMid, yMid, txtString)
 
 def plotTree(myTree, parentPt, nodeTxt):
+    """
+    绘制树
+    :param myTree: 决策树
+    :param parentPt: 父节点
+    :param nodeTxt: 结点内容
+    :return: 无返回
+    """
     numLeafs = getNumLeafs(myTree)
     depth = getTreeDepth(myTree)
     firstStr = list(myTree.keys())[0]
@@ -81,6 +95,11 @@ def plotTree(myTree, parentPt, nodeTxt):
     plotTree.yOff = plotTree.yOff + 1.0 / plotTree.totalD
 
 def createPlot(inTree):
+    """
+    主函数
+    :param inTree: 决策树(字典)
+    :return: 无返回
+    """
     fig = plt.figure(1, facecolor="white")
     fig.clf()
     axprops = dict(xticks=[], yticks=[])
