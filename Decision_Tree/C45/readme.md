@@ -24,16 +24,16 @@
 
 1. **DATASET**: Database for fitting contact lenses
 2. **Number of Instances**: 24
-3. **Number of Attributes: **4 (all nominal)
-4. **Attribute Information:**3 Classes
+3. **Number of Attributes**: 4 (all nominal)
+4. **Attribute Information**: 3 Classes
    -  the patient should be fitted with hard contact lenses,
    -  the patient should be fitted with soft contact lenses,
    -  the patient should not be fitted with contact lenses.
 
-1. **age of the patient:** (1) young, (2) pre-presbyopic, (3) presbyopic
-2. **spectacle prescription: ** (1) myope, (2) hypermetrope
-3. **astigmatic:**   (1) no, (2) yes
-4. **tear production rate:**  (1) reduced, (2) normal
+1. **age of the patient**: (1) young, (2) pre-presbyopic, (3) presbyopic
+2. **spectacle prescription**: (1) myope, (2) hypermetrope
+3. **astigmatic**: (1) no, (2) yes
+4. **tear production rate**: (1) reduced, (2) normal
 
 ## 文件用法
 首先克隆项目并进入到**tree_test.py**所在文件夹，在此处打开cmd，若要测试已有的数据集则输入
