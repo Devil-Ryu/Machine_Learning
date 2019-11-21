@@ -67,7 +67,7 @@ def plotMidText(cntrPt, parentPt, txtString):
     """
     xMid = (parentPt[0] - cntrPt[0]) / 2.0 + cntrPt[0]
     yMid = (parentPt[1] - cntrPt[1]) / 2.0 + cntrPt[1]
-    plt.text(xMid, yMid, txtString)
+    plt.text(xMid, yMid, txtString, rotation=-45)
 
 def plotTree(myTree, parentPt, nodeTxt):
     """
