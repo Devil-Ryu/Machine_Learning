@@ -47,7 +47,6 @@ def chooseBestFeatureToSplit(dataSet):
     """
     print(dataSet)
     numFeatures = len(dataSet[0]) - 1
-    print('numFeatures:', numFeatures)
     baseEntropy = calShannoEnt(dataSet)
     paramterList = []
     for i in range(numFeatures):
